@@ -121,6 +121,7 @@ div.section:nth-child(2)>div {
     width: 100%;
     height: 100%;
     /* transform animálása */
+    transition: transform 0.5;
     transform-style: preserve-3d;
 }
 
@@ -161,12 +162,17 @@ ball {
     bottom: 0;
     z-index: 2;
     /* transform eltolás visszaállítása  y mentén */
+    transform: translate(1px);
     /* transform animálása ease-in */
+    transition: transform 0.6 ease-in;
 }
 
 ball.bounce {
     /* transform eltolás y mentén 120px */
+    transform: translate(-120px);
     /* transform animálása ease-out */
+        transition: transform 0.6 ease-out;
+
 }
 
 
